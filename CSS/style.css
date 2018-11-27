@@ -32,11 +32,19 @@ a{
   padding: auto;
   display: inline-block;
 }
-#about, #location, #menu, #order{
+.content-wrapper{
+  text-align: center;
+}
+#column1,#column2,#column3{
+  display: inline-block;
   column-count: 2;
-  column-gap: 0px;
-  width: 60%;
-  margin-left: 300px;
+  width: 50%;
+}
+
+#image1,#image2,#image3{
+  background-color: #0CF;
+  height: 150px;
+  width: auto;
 }
 
 
@@ -137,5 +145,15 @@ a{
 @media only screen and (max-width: 340px) {
   .footer .col {
     width: 100%;
+  }
+}
+/***MEDIA QUERY FOR NAV MENU**/
+@media only screen and (max-width: 789px) {
+  .contain .social {
+    width: 1000px;
+    display: block;
+  }
+  .social h1 {
+    margin: 0px;
   }
 }
